@@ -43,7 +43,7 @@ app.get('*', (req, res) => {
   res.status(404).send("404 Error: We cannot find the page you are looking for.");
 });
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 app.listen(port, () => {
   log(`Listening on port ${port}...`)
 }) 

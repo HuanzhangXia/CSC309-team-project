@@ -3,21 +3,21 @@
     Important: Please do not refresh on the main page for many time, we have a very limited cloudinary quota
 1. clone git repo:
     ```
-    git clone https://github.com/csc309-fall-2020/team09.git
+    git clone https://github.com/HuanzhangXia/CSC309-team-project.git
     ```
 2. go to project top level directory:
     ```
-    cd team09/share_my_craft/api
+    cd CSC309-team-project/share_my_craft/api
     ```
 3. Install npm dependencies
     ```
-    cd npm install 
+    npm install 
     ```
 4. Start the server
     ```
     node app.js
     ```
-5. The app should be available at ```localhost:5000```, have fun. 
+5. The app should be available at ```localhost:3000```, have fun. If an error```listen EADDRINUSE: address already in use :::5000``` occurred, change to another port (ex: 5000) on line 46 of ```app.js``` and try again.
 
 ## Viewing the deployed app on Heroku
 The app is deployed via Heroku, and it is available at [```https://sharemycraft1.herokuapp.com/```](https://sharemycraft1.herokuapp.com/).
@@ -28,26 +28,30 @@ The app is deployed via Heroku, and it is available at [```https://sharemycraft1
 2. If the user does not log in, the button on the top right corner would have the text 'Login'. The user can open the login page by clicking on the button. 
 3. A user can click on tags of the crafts to open the corresponding craft page.
 4. A user can search for crafts by crafts' titles and authors. This can be done by typing in a keyword in the search bar and click on the 'Go' button or hit the Enter button on key board.
+![screeshot of index](./pictures/index.png)
 
 ## Login/signup
-1. If the user has an account, he/she can log in by typing the correct username and password and clicking on the login button. The user will get a red alert if he/she submit incorrect information. Once logged in, it will open the index page with a welcoming text on top-right.
+1. If the user has an account, he/she can log in by typing the correct username and password and clicking on the login button. The user will get a red alert if he/she submit incorrect information. Once logged in, it will open the index page with a welcoming text on top-right.(If you prefer not to register as a new user, you can attempt to log in using this account: username: user, password: user)
 2. If the common user has logged in, it will open the index page. The button on the top right corner on the index page would have a welcoming text. The user can open the personal page by clicking on the button. If the admin has logged in, it will open the admin page.
 2. If the user wants to sign up for an account, he/she can click on the link at the bottom right corner of the box. It will open the signup page.
 3. The user can sign up on the signup page. He/she can choose usernames that have not been taken. He/she cannot select 'admin' as the username. It will open the index page once signed up.
-
+![screeshot of login page](./pictures/login.png)
 ## Craft
 1. The craft page is an important feature of the website. A single craft page loads information about a hard-coded craft. The webpage displays the title, author, and all instructions of the craft. At the end of the instructions, there is a comment block for users to add comments. After the comment block, there is a try block for users to show their products.
 2. The user can view the personal page of the craft's author by clicking on the username below the title. The personal page showed to the viewer does not contain the setting buttons.
 3. The user can also like the craft by clicking on the like button below the title. A user can only like the same craft once.
-
+![screeshot of craft page](./pictures/craft.png)
 ## Personal
 1. The user can view the crafts he/she has tried, the crafts he/she added, the crafts he/she commented, or liked on the personal page by clicking buttons on the sidebar.
 2. The user can add a new craft on the personal page. 
 3. The user can change its profile picture, banner picture, and password on the personal page. 
-
+![screeshot of personal page](./pictures/personal.png)
 ## Admin
 1. The admin can mute common users or crafts in the admin page. The admin does not have its personal picture or banner picture. Our website has only one admin.
-
+![screeshot of admin page](./pictures/admin.png)
+## Database
+We use MongoDB to manage our databases.
+![screeshot of MongoDB](./pictures/mongodb.png)
 # Overview of routes
 ## User API
 
