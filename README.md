@@ -20,12 +20,12 @@
 5. The app should be available at ```localhost:3000```, have fun. If an error```listen EADDRINUSE: address already in use :::5000``` occurred, change to another port (ex: 5000) on line 46 of ```app.js``` and try again.
 
 ## Viewing the deployed app on Heroku
-The app is deployed via Heroku, and it is available at [```https://sharemycraft1.herokuapp.com/```](https://sharemycraft1.herokuapp.com/).
+The app is deployed via Heroku, and it is available at https://sharemycraft-a8121e9bede8.herokuapp.com/index.
 
 # Overview of functionalities
 ## Index
 1. This is the entry-point for any user.
-2. If the user does not log in, the button on the top right corner would have the text 'Login'. The user can open the login page by clicking on the button. 
+2. If the user does not log in, the button on the top right corner would have the text 'Login'. The user can open the login page by clicking on the button.
 3. A user can click on tags of the crafts to open the corresponding craft page.
 4. A user can search for crafts by crafts' titles and authors. This can be done by typing in a keyword in the search bar and click on the 'Go' button or hit the Enter button on key board.
 ![screeshot of index](./pictures/index.png)
